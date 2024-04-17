@@ -5,6 +5,7 @@ title: Page1
 tags:
   - staff
 number: 601
+slug: "page1"
 ---
 Here is a cat - tada!!
 

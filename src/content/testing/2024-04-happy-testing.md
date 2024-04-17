@@ -8,6 +8,7 @@ tags:
   - public
   - staff
 number: 103
+slug: "test101"
 ---
 
 ## Hello World!
