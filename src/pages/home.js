@@ -10,16 +10,16 @@ const IndexPage = ({data}) => {
 
     console.log(data.files)
 
-  return (
-    <main style={pageStyles}>
-      <div>
-        <h1 className="font-bold text-2xl mb-2">Hello Single World!</h1>
-        <div className="p-2 border-2 border-gray-400"
-            dangerouslySetInnerHTML={{__html: data.files.html}}
-        />
-      </div>
-    </main>
-  )
+    return (
+        <main style={pageStyles}>
+            <div>
+                <h1 className="font-bold text-2xl mb-2">Hello Single World!</h1>
+                <div className="p-2 border-2 border-gray-400"
+                    dangerouslySetInnerHTML={{__html: ""}} //data.files.html
+                />
+            </div>
+        </main>
+    )
 }
 
 export default IndexPage
