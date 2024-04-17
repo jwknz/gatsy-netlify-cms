@@ -15,7 +15,8 @@ export default function BlogPostTemplate({
   return (
     <main style={pageStyles}>
       <div>
-        <h1 className="font-bold text-2xl mb-2">Hello World!</h1>
+        <h1 className="font-bold text-2xl mb-2">{frontmatter.title}</h1>
+        <h2 className="font-medium text-xl mb-2">{frontmatter.date}</h2>
         <ul className="p-2 border-2 border-gray-400 mb-6">
           {data.files.edges.map( ({node}) => {
 
@@ -37,8 +38,6 @@ export default function BlogPostTemplate({
         </ul>
 
         <div>
-          <h1>{frontmatter.title}</h1>
-          <h2>{frontmatter.date}</h2>
           <div
             dangerouslySetInnerHTML={{ __html: html }}
           />
