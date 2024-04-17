@@ -4,7 +4,35 @@
 module.exports = {
   siteMetadata: {
     title: `100-gatsby-netlify-cms`,
-    siteUrl: `https://www.yourdomain.tld`
+    siteUrl: `https://venerable-peony-dafab7.netlify.app`
   },
-  plugins: ["gatsby-plugin-decap-cms", "gatsby-plugin-postcss"]
+  plugins: [
+    "gatsby-plugin-decap-cms", 
+    "gatsby-plugin-postcss",
+    "gatsby-plugin-image",
+    {
+      resolve : `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`
+      }
+    },
+    {
+      resolve : `gatsby-source-filesystem`,
+      options: {
+        name: `md`,
+        path: `${__dirname}/src/pages`
+      }
+    },
+    {
+      resolve : `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/static`
+      }
+    },
+    `gatsby-transformer-remark`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`
+  ]
 };

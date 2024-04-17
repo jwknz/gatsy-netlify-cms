@@ -6,6 +6,8 @@ backend:
 media_folder: static/assets
 public_folder: /assets
 
+site_url: https://venerable-peony-dafab7.netlify.app
+
 collections:
   - name: pages
     label: pages
