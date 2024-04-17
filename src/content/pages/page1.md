@@ -3,4 +3,8 @@ path: Page1
 date: 2024-04-17T19:39:00.000Z
 title: Page1
 ---
-Here is a page - tada!!
+Here is a cat - tada!!
+
+![cat](http://placekitten.com/g/300/300 "cat")
+
+Here is some text below it.
