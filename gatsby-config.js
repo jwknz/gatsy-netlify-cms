@@ -6,5 +6,5 @@ module.exports = {
     title: `100-gatsby-netlify-cms`,
     siteUrl: `https://www.yourdomain.tld`
   },
-  plugins: ["gatsby-plugin-netlify-cms", "gatsby-plugin-postcss"]
+  plugins: ["gatsby-plugin-decap-cms", "gatsby-plugin-postcss"]
 };
