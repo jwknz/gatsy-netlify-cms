@@ -54,11 +54,10 @@ export const Head = () => <title>Home Page</title>
 export const pageQuery = graphql`
   query($id: String!) {
 
-    files: allMarkdownRemark {
+    files: allMarkdownRemark(sort: {frontmatter: {tags: ASC}}) {
       edges {
         node {
           id
-          html
           frontmatter {
             title
             tags
