@@ -15,9 +15,10 @@ collections:
     folder: "src/content/pages"
     create: true
     fields:
-      - { name: path, label: Path }
-      - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
+      - { name: path, label: Path }
+      - { label: "slug", name: "slug", widget: "string" }
+      - { name: date, label: Date, widget: datetime }
       - { label: "Tags", name: "tags", widget: "list", default: ["guides"] }
       - { label: "Order", name: "number", widget: "number", default: 0 }
       - { name: body, label: Body, widget: markdown }
@@ -31,6 +32,7 @@ collections:
     fields:
       - { name: title, label: Title }
       - { label: "Description", name: "description", widget: "string" }
+      - { label: "slug", name: "slug", widget: "string" }
       - { name: path, label: Path }
       - { name: date, label: Date, widget: datetime }
       - { label: "Tags", name: "tags", widget: "list", default: ["guides"] }
