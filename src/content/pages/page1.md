@@ -7,7 +7,7 @@ tags:
   - staff
 number: 601
 ---
-Here is a bear - tada!!
+## Here is a bear - tada!!
 
 ![bear](https://placebear.com/200/300 "bear")
 
