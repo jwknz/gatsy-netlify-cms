@@ -1,14 +1,14 @@
 ---
-path: Page1
-date: 2024-04-17T19:39:00.000Z
 title: Page1
+path: Page1
+slug: page1
+date: 2024-04-17T19:39:00.000Z
 tags:
   - staff
 number: 601
-slug: "page1"
 ---
-Here is a cat - tada!!
+Here is a bear - tada!!
 
-![cat](http://placekitten.com/g/300/300 "cat")
+![bear](https://placebear.com/200/300 "bear")
 
 Here is some text below it.
