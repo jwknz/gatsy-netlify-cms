@@ -1,0 +1,33 @@
+backend:
+  name: github
+  repo: jwknz/gatsy-netlify-cms
+  branch: main
+
+media_folder: static/assets
+public_folder: /assets
+
+collections:
+  - name: pages
+    label: pages
+    label_singular: "my_page"
+    folder: "src/pages/blog"
+    create: true
+    fields:
+      - { name: path, label: Path }
+      - { name: date, label: Date, widget: datetime }
+      - { name: title, label: Title }
+      - { name: body, label: Body, widget: markdown }
+
+  - name: testing
+    label: testing
+    label_singular: "my_tests"
+    folder: "src/pages/testing"
+    slug: "{{year}}-{{month}}-{{slug}}"
+    create: true
+    fields:
+      - { name: title, label: Title }
+      - { label: "Description", name: "description", widget: "string" }
+      - { name: path, label: Path }
+      - { name: date, label: Date, widget: datetime }
+      - { label: "Tags", name: "tags", widget: "list", default: ["guides"] }
+      - { name: body, label: Body, widget: markdown }
