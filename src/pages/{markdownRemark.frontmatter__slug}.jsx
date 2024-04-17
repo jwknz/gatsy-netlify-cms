@@ -54,7 +54,7 @@ export const Head = () => <title>Home Page</title>
 export const pageQuery = graphql`
   query($id: String!) {
 
-    files: allMarkdownRemark(sort: {frontmatter: {tags: ASC}}) {
+    files: allMarkdownRemark(sort: {frontmatter: {number: ASC}}) {
       edges {
         node {
           id
