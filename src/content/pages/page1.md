@@ -2,6 +2,8 @@
 path: Page1
 date: 2024-04-17T19:39:00.000Z
 title: Page1
+tags:
+  - staff
 ---
 Here is a cat - tada!!
 

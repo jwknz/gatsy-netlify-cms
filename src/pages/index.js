@@ -16,11 +16,12 @@ const IndexPage = ({data}) => {
           {data.files.edges.map( ({node}) => {
             return (
 
-              <li key={node.id} className={
-                  node.frontmatter.tags[0] === "guides" ? "text-blue-400" : 
-                  node.frontmatter.tags[0] === "tests" ? "text-red-400" :
-                  null
-                  }>
+              <li key={node.id} className={[
+                  node.frontmatter.tags[0] === "guides" ? "bg-blue-400" : 
+                  node.frontmatter.tags[0] === "tests" ? "bg-red-400" :
+                  "bg-green-400",
+                  "m-2 p-2 rounded-lg"
+                  ].join(" ")}>
                 <span>{node.frontmatter.title}</span>
               </li>
 

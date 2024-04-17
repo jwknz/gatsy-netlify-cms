@@ -18,6 +18,8 @@ collections:
       - { name: path, label: Path }
       - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
+      - { label: "Tags", name: "tags", widget: "list", default: ["guides"] }
+      - { label: "Order", name: "number", widget: "number", default: 0 }
       - { name: body, label: Body, widget: markdown }
 
   - name: testing
@@ -32,4 +34,5 @@ collections:
       - { name: path, label: Path }
       - { name: date, label: Date, widget: datetime }
       - { label: "Tags", name: "tags", widget: "list", default: ["guides"] }
+      - { label: "Order", name: "number", widget: "number", default: 0 }
       - { name: body, label: Body, widget: markdown }
