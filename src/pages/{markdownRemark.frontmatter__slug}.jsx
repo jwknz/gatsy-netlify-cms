@@ -1,6 +1,9 @@
 import * as React from "react"
 import { graphql, Link } from "gatsby"
 
+import Search from "../components/search"
+const searchIndices = [{ name: `Pages`, title: `Pages`, tags: `Pages` }]
+
 const pageStyles = {
   padding: 40,
 }
@@ -15,6 +18,7 @@ export default function BlogPostTemplate({
   return (
     <main style={pageStyles}>
       <div>
+        <Search indices={searchIndices} />
         <h1 className="font-bold text-2xl mb-2">{frontmatter.title}</h1>
         <h2 className="font-medium text-xl mb-2">{frontmatter.date}</h2>
         <ul className="p-2 border-2 border-gray-400 mb-6">

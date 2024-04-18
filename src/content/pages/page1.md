@@ -1,4 +1,5 @@
 ---
+templateKey: index
 title: Page1
 path: Page1
 slug: page1
